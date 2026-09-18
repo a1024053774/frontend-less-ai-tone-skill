@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Xinzhou Precision — Empowering the Future</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root { color-scheme: dark; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Inter, system-ui, sans-serif;
+      background: #070b16;
+      color: #e8ecff;
+      line-height: 1.6;
+    }
+    .banner { background: #312e81; color: #c7d2fe; font-size: 12px; letter-spacing: .12em; text-transform: uppercase; text-align: center; padding: 8px; }
+    nav {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 18px 8%; position: sticky; top: 0; z-index: 10;
+      background: rgba(7,11,22,.72); backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(99,102,241,.25);
+    }
+    .logo { font-weight: 800; letter-spacing: .08em; }
+    nav a { color: #a5b4fc; margin-left: 22px; text-decoration: none; font-size: 14px; }
+    .btn {
+      display: inline-block; border: 0; cursor: pointer; text-decoration: none;
+      background: linear-gradient(135deg,#818cf8,#6366f1);
+      color: white; font-weight: 600; border-radius: 999px;
+      padding: 12px 22px; box-shadow: 0 10px 40px rgba(99,102,241,.45);
+    }
+    .btn-ghost {
+      display: inline-block; margin-left: 12px; color: #c7d2fe; text-decoration: none;
+      padding: 12px 22px; border-radius: 999px; border: 1px solid rgba(165,180,252,.35);
+    }
+    .hero {
+      position: relative; overflow: hidden;
+      padding: 96px 8% 80px; text-align: center;
+    }
+    .hero::before, .hero::after {
+      content: ""; position: absolute; border-radius: 999px; filter: blur(80px);
+      animation: float 8s ease-in-out infinite;
+    }
+    .hero::before { width: 420px; height: 420px; background: #4f46e5; top: -80px; left: 10%; opacity: .45; }
+    .hero::after { width: 360px; height: 360px; background: #22d3ee; right: 8%; bottom: -40px; opacity: .28; }
+    @keyframes float { 50% { transform: translateY(18px); } }
+    .eyebrow { color: #a5b4fc; font-size: 12px; letter-spacing: .28em; text-transform: uppercase; margin-bottom: 18px; }
+    h1 { font-size: clamp(32px, 5vw, 56px); line-height: 1.15; font-weight: 800; max-width: 16ch; margin: 0 auto 18px; }
+    .hero p { max-width: 42em; margin: 0 auto 28px; color: #c7d2fe; }
+    .logos {
+      display: flex; justify-content: center; gap: 36px; flex-wrap: wrap;
+      padding: 12px 8% 64px; color: #64748b; font-weight: 700; letter-spacing: .16em; font-size: 13px;
+    }
+    .section { padding: 24px 8% 80px; }
+    h2 { text-align: center; font-size: 32px; margin-bottom: 12px; }
+    .lead { text-align: center; color: #a5b4fc; margin-bottom: 36px; }
+    .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+    .card {
+      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
+      border: 1px solid rgba(165,180,252,.18); border-radius: 24px; padding: 28px;
+      box-shadow: 0 20px 50px rgba(0,0,0,.35);
+    }
+    .icon { width: 44px; height: 44px; border-radius: 14px; background: #312e81; color: #a5b4fc; display: grid; place-items: center; margin-bottom: 16px; font-weight: 800; }
+    .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; text-align: center; padding: 8px 8% 72px; }
+    .stats strong { display: block; font-size: 36px; color: #818cf8; }
+    .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .num { font-size: 40px; font-weight: 800; color: #4338ca; }
+    .quote {
+      max-width: 720px; margin: 0 auto; text-align: center; color: #c7d2fe;
+      background: rgba(255,255,255,.04); border-radius: 24px; padding: 36px;
+    }
+    .cta-band {
+      margin: 0 8% 72px; padding: 48px; border-radius: 32px; text-align: center;
+      background: linear-gradient(135deg,#312e81,#1e1b4b);
+    }
+    footer { padding: 24px 8% 48px; color: #64748b; font-size: 13px; display: flex; justify-content: space-between; }
+    @media (max-width: 800px) {
+      .cards, .stats, .steps { grid-template-columns: 1fr; }
+      nav a { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="banner">Experiment · without skill</div>
+  <nav>
+    <div class="logo">XINZHOU</div>
+    <div>
+      <a href="#features">Features</a>
+      <a href="#process">Process</a>
+      <a class="btn" href="#start">Get Started</a>
+    </div>
+  </nav>
+  <header class="hero">
+    <p class="eyebrow">Welcome to the future</p>
+    <h1>Empowering the Future of Industrial Motion</h1>
+    <p>我们提供全面、无缝、领先的一站式传动解决方案，赋能智造升级，助力全球客户实现卓越增长。</p>
+    <a class="btn" id="start" href="#">立即体验</a>
+    <a class="btn-ghost" href="#">Learn More</a>
+  </header>
+  <div class="logos">ACME · GLOBALTECH · NEXUS · APEX · QUANTUM</div>
+  <section class="section" id="features">
+    <h2>Why Choose Us</h2>
+    <p class="lead">专业 · 可靠 · 高效，为您打造下一代智能传动体验。</p>
+    <div class="cards">
+      <article class="card"><div class="icon">01</div><h3>Innovation</h3><p>持续创新，赋能每一个工业场景，让传动更智能。</p></article>
+      <article class="card"><div class="icon">02</div><h3>Quality</h3><p>全面品质管理，无缝交付，值得全球领先企业信赖。</p></article>
+      <article class="card"><div class="icon">03</div><h3>Reliability</h3><p>可靠稳定，助力您的业务在未来竞争中脱颖而出。</p></article>
+    </div>
+  </section>
+  <div class="stats">
+    <div><strong>20+</strong>Years of excellence</div>
+    <div><strong>5,000+</strong>Happy customers</div>
+    <div><strong>99.9%</strong>Uptime guarantee</div>
+  </div>
+  <section class="section" id="process">
+    <h2>How it works</h2>
+    <p class="lead">三步开启您的智能传动之旅。</p>
+    <div class="steps">
+      <div><div class="num">01</div><h3>Connect</h3><p>告诉我们您的愿景。</p></div>
+      <div><div class="num">02</div><h3>Design</h3><p>我们打造专属方案。</p></div>
+      <div><div class="num">03</div><h3>Grow</h3><p>一起赢向未来。</p></div>
+    </div>
+  </section>
+  <section class="section">
+    <blockquote class="quote">“Xinzhou transformed our workflow with seamless, world-class engineering. Highly recommended!”<br /><br />— Alex Chen, Fortune 500 Manufacturing Lead</blockquote>
+  </section>
+  <div class="cta-band">
+    <h2>Ready to get started?</h2>
+    <p class="lead">立即开启未来，体验全面赋能。</p>
+    <a class="btn" href="#">Get Started</a>
+  </div>
+  <footer><span>© 2026 Xinzhou Precision</span><span>Privacy · Terms</span></footer>
+</body>
+</html>

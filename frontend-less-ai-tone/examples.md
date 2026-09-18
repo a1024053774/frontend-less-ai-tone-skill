@@ -1,9 +1,10 @@
 # 正反例
 
-同一份 brief，先按常见模型默认写，再按本 Skill 写。完整 HTML 对照：
+同一份 brief，先按常见模型默认写，再按本 Skill 写。
 
-- [examples/before.html](examples/before.html) — 未用 Skill
-- [examples/after.html](examples/after.html) — 用了 Skill
+- 未用 Skill：[before.html](examples/before.html) · [截图](examples/before.png)
+- 用了 Skill：[after.html](examples/after.html) · [截图](examples/after.png)
+- 托管对照：[GitHub Pages](https://a1024053774.github.io/frontend-less-ai-tone-skill/)
 
 ## Brief（两版共用）
 

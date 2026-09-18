@@ -6,6 +6,24 @@
 
 受约束的生成器（只许改槽位、不许吐 CSS）应使用项目自己的叠加层，不要用本 Skill 硬写样式。
 
+## 对照
+
+同一份 brief：忻州精工减速机一页站。读者是采购和工程师，主行动是索取规格表。已知硬齿面斜齿轮、速比 5–100、额定扭矩至 18 kN·m、安装面 B3/B5。认证、客户、产能没有资料。
+
+打开整页：[未用 Skill](https://a1024053774.github.io/frontend-less-ai-tone-skill/before.html) · [用了 Skill](https://a1024053774.github.io/frontend-less-ai-tone-skill/after.html) · [对照页](https://a1024053774.github.io/frontend-less-ai-tone-skill/)
+
+源文件在 [`frontend-less-ai-tone/examples/`](frontend-less-ai-tone/examples/) 和 [`docs/`](docs/)。
+
+**未用 Skill**
+
+[![未用 Skill：紫黑渐变落地页，Get Started，假客户墙](frontend-less-ai-tone/examples/before.png)](https://a1024053774.github.io/frontend-less-ai-tone-skill/before.html)
+
+**用了 Skill**
+
+[![用了 Skill：新闻纸底，超大速比 5–100，获取规格表](frontend-less-ai-tone/examples/after.png)](https://a1024053774.github.io/frontend-less-ai-tone-skill/after.html)
+
+文案和结构对照见 [`frontend-less-ai-tone/examples.md`](frontend-less-ai-tone/examples.md)。这证明 Skill 被执行时能改输出，不是审美通过证明。
+
 ## 适用范围
 
 - 落地页、营销站、后台、表单、空状态、设置页、组件
@@ -27,8 +45,6 @@ npx skills add a1024053774/frontend-less-ai-tone-skill@frontend-less-ai-tone -g 
 ```text
 用 frontend-less-ai-tone 帮我做这一页：读者是谁、主行动是什么、已知事实有哪些。
 ```
-
-同一份 brief 的未用 / 已用对照见 [`frontend-less-ai-tone/examples.md`](frontend-less-ai-tone/examples.md)，完整 HTML 在 [`frontend-less-ai-tone/examples/`](frontend-less-ai-tone/examples/)。
 
 ## 设计依据
 

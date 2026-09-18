@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>忻州精工减速机 · 规格表</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --paper: #e7e1d4;
+      --ink: #1f1a14;
+      --muted: #5c5346;
+      --line: #c9c0b0;
+      --oxide: #9a3412;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "IBM Plex Sans", "PingFang SC", "Noto Sans SC", sans-serif;
+      background: var(--paper);
+      color: var(--ink);
+      line-height: 1.55;
+    }
+    .banner { background: var(--ink); color: var(--paper); font-size: 12px; text-align: center; padding: 8px; }
+    header {
+      display: flex; justify-content: space-between; align-items: baseline;
+      padding: 20px 8%; border-bottom: 1px solid var(--line);
+    }
+    .brand { font-weight: 600; letter-spacing: .02em; }
+    .brand span { color: var(--muted); font-weight: 400; margin-left: 10px; font-size: 14px; }
+    .hero { padding: 56px 8% 40px; display: grid; grid-template-columns: 1.1fr .9fr; gap: 48px; align-items: end; }
+    .ratio {
+      font-family: "IBM Plex Sans Condensed", "IBM Plex Sans", sans-serif;
+      font-size: clamp(72px, 14vw, 160px); line-height: .85; letter-spacing: -.04em;
+      color: var(--oxide); font-weight: 700;
+    }
+    .ratio small { display: block; font-size: 18px; color: var(--muted); letter-spacing: 0; font-weight: 500; margin-top: 12px; }
+    h1 { font-size: clamp(22px, 3vw, 32px); font-weight: 600; max-width: 16em; margin-bottom: 14px; }
+    .hero p { color: var(--muted); max-width: 36em; margin-bottom: 22px; }
+    .gap { display: inline-block; border: 1px solid var(--line); padding: 2px 8px; font-size: 13px; color: var(--muted); margin-right: 8px; }
+    .btn {
+      display: inline-block; background: var(--oxide); color: #fff7ed; text-decoration: none;
+      padding: 12px 18px; font-weight: 600; border-radius: 2px;
+    }
+    .btn:focus { outline: 2px solid var(--ink); outline-offset: 3px; }
+    table { width: 100%; border-collapse: collapse; font-size: 15px; }
+    th, td { text-align: left; padding: 12px 0; border-bottom: 1px solid var(--line); }
+    th { color: var(--muted); font-weight: 500; width: 34%; }
+    .panel { padding: 8px 8% 64px; }
+    h2 { font-size: 18px; font-weight: 600; margin: 28px 0 12px; }
+    .need { color: var(--muted); max-width: 40em; }
+    .need li { margin: 6px 0 6px 1.1em; }
+    footer { padding: 20px 8% 48px; border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; }
+    @media (max-width: 800px) {
+      .hero { grid-template-columns: 1fr; gap: 16px; padding-top: 32px; }
+      .ratio { font-size: 88px; }
+    }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+  </style>
+</head>
+<body>
+  <div class="banner">实验 · 已用 frontend-less-ai-tone</div>
+  <header>
+    <div class="brand">忻州精工<span>斜齿轮减速机</span></div>
+    <a class="btn" href="#spec">获取规格表</a>
+  </header>
+  <section class="hero">
+    <div>
+      <div class="ratio">5–100<small>速比范围</small></div>
+    </div>
+    <div>
+      <h1>硬齿面斜齿轮减速机<br />按速比和扭矩选型</h1>
+      <p>额定扭矩至 18 kN·m，安装面 B3 / B5。给工况和速比，出对应规格。</p>
+      <p><span class="gap">认证待补充</span><span class="gap">产能待补充</span></p>
+      <p style="margin-top:18px"><a class="btn" href="#spec">获取规格表</a></p>
+    </div>
+  </section>
+  <section class="panel" id="spec">
+    <h2>已给定规格</h2>
+    <table>
+      <tr><th>齿制</th><td>硬齿面斜齿轮</td></tr>
+      <tr><th>速比</th><td>5–100</td></tr>
+      <tr><th>额定扭矩</th><td>至 18 kN·m</td></tr>
+      <tr><th>安装面</th><td>B3 / B5</td></tr>
+      <tr><th>认证 / 客户 / 产能</th><td>待补充。有文件后再写入本表，不在这里编造。</td></tr>
+    </table>
+    <h2>索取规格表时请写清</h2>
+    <ul class="need">
+      <li>目标速比或转速</li>
+      <li>负载扭矩或功率</li>
+      <li>安装面 B3 还是 B5</li>
+      <li>环境（粉尘、温度）如果有要求</li>
+    </ul>
+  </section>
+  <footer>忻州精工减速机 · 本页只用了 brief 里的事实。认证、客户名单和产能没有资料，所以没有写。</footer>
+</body>
+</html>
