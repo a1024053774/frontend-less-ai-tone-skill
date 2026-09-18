@@ -1,0 +1,11 @@
+frontend-less-ai-tone includes adaptations of the following third-party works.
+
+lieflat-less-ai-tone
+Copyright (c) shiujan
+MIT License
+https://github.com/larashero3-dotcom/lieflat-less-ai-tone
+
+frontend-design (Anthropic skills)
+Copyright Anthropic
+Apache License 2.0
+https://github.com/anthropics/skills/tree/main/skills/frontend-design
