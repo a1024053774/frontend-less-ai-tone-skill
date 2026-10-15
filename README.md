@@ -1,5 +1,11 @@
 # Frontend Less AI Tone
 
+> **已合并，仓库已归档。** 本 Skill 于 2026-10-15 并入 [frontend-production](https://github.com/a1024053774/frontend-production-skill)，这里不再更新。规则去向见 [COVERAGE.md](https://github.com/a1024053774/frontend-production-skill/blob/main/COVERAGE.md)。新安装请用：
+>
+> ```bash
+> npx skills add a1024053774/frontend-production-skill --skill frontend-production -g -y
+> ```
+
 一个面向通用前端工作的 Skill：让页面读起来、看起来像具体产品，而不是通用 AI 落地页或仪表盘。
 
 它管文案、视觉方向、层级和常见 AI 默认皮的否决。能写 CSS 就按已选方向写；不能写 CSS 的受约束生成器先读项目叠加层，不要硬写样式凑数。先定一个主行动和一个视觉记忆点，再写句子和样式。事实只来自给定材料；没有的数字、客户、认证不要编。
